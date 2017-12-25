@@ -1,0 +1,37 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: $shadow-3;
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+    margin-bottom: 6rem;
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%); // first attr is the radius, 50% would be half the parent element which is 7.5rem others make it exactly centerered;
+        shape-outside: circle(50% at 50% 50%); // first attr is the radius, 50% would be half the parent element which is 7.5rem others make it exactly centerered;
+        // Also to get shapeoutside to work, a w and h as well as float need to be set
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg);
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+    }
+
+    .stories-btn {
+        margin: 0 auto;
+        width: 100px;
+    }
+}
