@@ -27,7 +27,7 @@
     transform: translate(0); } }
 
 /* Normalize the styling  */
-/* line 4, /Users/ragnarok/Sites/websites/natour/sass/base/_base.scss */
+/* line 4, /Users/ragnarok/Sites/websites/natours/sass/base/_base.scss */
 *,
 *::after,
 *::before {
@@ -35,15 +35,15 @@
   padding: 0;
   box-sizing: inherit; }
 
-/* line 12, /Users/ragnarok/Sites/websites/natour/sass/base/_base.scss */
+/* line 12, /Users/ragnarok/Sites/websites/natours/sass/base/_base.scss */
 html {
   font-size: 62.5%; }
 
-/* line 17, /Users/ragnarok/Sites/websites/natour/sass/base/_base.scss */
+/* line 17, /Users/ragnarok/Sites/websites/natours/sass/base/_base.scss */
 body {
   box-sizing: border-box; }
 
-/* line 1, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -52,21 +52,21 @@ body {
   color: #777;
   padding: 2.5rem; }
 
-/* line 10, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+/* line 10, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   /* to stop from unwanted shaking on child transforming */
   backface-visibility: hidden;
   margin-bottom: 6rem; }
-  /* line 17, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+  /* line 17, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
   .heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2.8rem;
     animation: moveInLeft 1s ease-out; }
-  /* line 25, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+  /* line 25, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -74,7 +74,7 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
 
-/* line 34, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+/* line 34, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -85,94 +85,132 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  /* line 45, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+  /* line 45, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-/* line 51, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+/* line 51, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
 .heading-teriary {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
 
-/* line 57, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+/* line 57, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
 .paragraph {
   font-size: 1.6rem; }
-  /* line 60, /Users/ragnarok/Sites/websites/natour/sass/base/_typography.scss */
+  /* line 60, /Users/ragnarok/Sites/websites/natours/sass/base/_typography.scss */
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-/* line 1, /Users/ragnarok/Sites/websites/natour/sass/base/_utilities.scss */
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/base/_utilities.scss */
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
-/* line 3, /Users/ragnarok/Sites/websites/natour/sass/base/_utilities.scss */
-.u-margin-bottom-big {
-  margin-bottom: 8rem; }
-
-/* line 4, /Users/ragnarok/Sites/websites/natour/sass/base/_utilities.scss */
-.u-margin-bottom-medium {
-  margin-bottom: 4rem; }
-
-/* line 5, /Users/ragnarok/Sites/websites/natour/sass/base/_utilities.scss */
+/* line 3, /Users/ragnarok/Sites/websites/natours/sass/base/_utilities.scss */
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
-/* line 3, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
-.btn:link, .btn:visited {
+/* line 4, /Users/ragnarok/Sites/websites/natours/sass/base/_utilities.scss */
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+/* line 5, /Users/ragnarok/Sites/websites/natours/sass/base/_utilities.scss */
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+/* line 7, /Users/ragnarok/Sites/websites/natours/sass/base/_utilities.scss */
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+/* line 8, /Users/ragnarok/Sites/websites/natours/sass/base/_utilities.scss */
+.u-margin-top-medium {
+  margin-bottom: 4rem !important; }
+
+/* line 9, /Users/ragnarok/Sites/websites/natours/sass/base/_utilities.scss */
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/components/_bg-video.scss */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  /* line 11, /Users/ragnarok/Sites/websites/natours/sass/components/_bg-video.scss */
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+/* line 2, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
 
-/* line 13, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
+/* line 17, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-  /* line 17, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  /* line 20, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-/* line 23, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
-.btn:active {
+/* line 26, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+.btn:active, .btn:focus {
   transform: translateY(-1px); }
 
-/* line 27, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
+/* line 31, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
 .btn--white {
   background-color: #fff;
   color: #777;
   padding: 1.5rem 4rem;
   display: inline-block; }
-  /* line 33, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
+  /* line 37, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
   .btn--white::after {
     background-color: #fff; }
 
-/* line 38, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s; }
+/* line 43, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+.btn--green {
+  background-color: #55c57a;
+  color: #fff;
+  padding: 1.5rem 4rem;
+  display: inline-block; }
+  /* line 49, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+  .btn--green::after {
+    background-color: #55c57a; }
+  /* line 53, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+  .btn--green::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+  /* line 65, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+  .btn--green--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+    /*	 apply the style at keyframe 0% before animation starts */ }
 
-/* line 52, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards;
-  /*	 apply the style at keyframe 0% before animation starts */ }
-
-/* line 60, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
-.btn-text:link, .btn-text:visited {
-  color: #55c57a;
+/* line 72, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+.btn .btn-text:link, .btn .btn-text:visited {
+  color: #000;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
@@ -180,69 +218,367 @@ body {
   font-size: 1.6rem;
   transition: all .2s; }
 
-/* line 71, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
-.btn-text:hover {
+/* line 82, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+.btn .btn-text:hover {
   background-color: #55c57a;
   color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transfor: translateY(-2px); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
 
-/* line 78, /Users/ragnarok/Sites/websites/natour/sass/components/_button.scss */
-.btn-text:active {
+/* line 88, /Users/ragnarok/Sites/websites/natours/sass/components/_button.scss */
+.btn .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transfor: translateY(0); }
+  transform: translateY(0); }
 
-/* line 1, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 50rem; }
+  /* line 6, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__side {
+    height: 52rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    /* line 18, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__side--front {
+      background-color: #fff; }
+    /* line 22, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__side--back {
+      transform: rotateY(180deg); }
+      /* line 25, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      /* line 29, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      /* line 33, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  /* line 39, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  /* line 43, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  /* line 48, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    /* line 58, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+    /* line 61, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+    /* line 64, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+  /* line 69, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    text-align: right;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  /* line 81, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    z-index: 10; }
+    /* line 87, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    /* line 93, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    /* line 99, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  /* line 106, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__details {
+    padding: 3rem;
+    z-index: 8; }
+    /* line 109, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      /* line 114, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        /* line 119, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  /* line 127, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  /* line 136, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  /* line 142, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  /* line 147, /Users/ragnarok/Sites/websites/natours/sass/components/_card.scss */
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/components/_composition.scss */
+.composition {
+  position: relative; }
+  /* line 4, /Users/ragnarok/Sites/websites/natours/sass/components/_composition.scss */
+  .composition__photo {
+    width: 65%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 1rem; }
+    /* line 13, /Users/ragnarok/Sites/websites/natours/sass/components/_composition.scss */
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    /* line 18, /Users/ragnarok/Sites/websites/natours/sass/components/_composition.scss */
+    .composition__photo--p2 {
+      right: -8rem;
+      top: 1rem; }
+    /* line 23, /Users/ragnarok/Sites/websites/natours/sass/components/_composition.scss */
+    .composition__photo--p3 {
+      left: 20%;
+      top: 9rem; }
+    /* line 28, /Users/ragnarok/Sites/websites/natours/sass/components/_composition.scss */
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      z-index: 20; }
+  /* line 36, /Users/ragnarok/Sites/websites/natours/sass/components/_composition.scss */
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+.form {
+  /* Select the sibling element of radio-input which is label and then select the child of that element which is the button */ }
+  /* line 3, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__group {
+    margin-bottom: 2rem; }
+  /* line 7, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    padding: 1.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s; }
+    /* line 19, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #55c57a;
+      transition: all .3s; }
+    /* line 26, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+    /* line 30, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+    .form__input::-webkit-input-placeholder {
+      color: #999; }
+  /* line 35, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  /* line 44, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+  /* line 50, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__radio-group {
+    width: 49%;
+    display: inline-block; }
+  /* line 55, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__radio-input {
+    display: none; }
+  /* line 59, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4rem; }
+  /* line 66, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__radio-button {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid #55c57a;
+    border-radius: 50%;
+    display: inline-block;
+    left: 0rem;
+    top: -.4rem; }
+    /* line 77, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+    .form__radio-button::after {
+      content: "";
+      /* each time a pseudo element is used set content property */
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #55c57a;
+      opacity: 0;
+      transition: opacity .2s; }
+  /* line 94, /Users/ragnarok/Sites/websites/natours/sass/components/_form.scss */
+  .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1; }
+
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/components/_feature-box.scss */
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  /* line 10, /Users/ragnarok/Sites/websites/natours/sass/components/_feature-box.scss */
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  /* line 19, /Users/ragnarok/Sites/websites/natours/sass/components/_feature-box.scss */
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/components/_story.scss */
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+  margin-bottom: 6rem; }
+  /* line 13, /Users/ragnarok/Sites/websites/natours/sass/components/_story.scss */
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg); }
+  /* line 25, /Users/ragnarok/Sites/websites/natours/sass/components/_story.scss */
+  .story__img {
+    height: 100%; }
+  /* line 29, /Users/ragnarok/Sites/websites/natours/sass/components/_story.scss */
+  .story__text {
+    transform: skewX(12deg); }
+  /* line 33, /Users/ragnarok/Sites/websites/natours/sass/components/_story.scss */
+  .story .stories-btn {
+    margin: 0 auto;
+    width: 100px; }
+
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
 .row {
-  max-width: 114rem;
+  max-width: 280rem;
   margin: 0 auto; }
-  /* line 5, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+  /* line 5, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-  /* line 2, /Users/ragnarok/Sites/websites/natour/sass/abstracts/_mixins.scss */
+  /* line 2, /Users/ragnarok/Sites/websites/natours/sass/abstracts/_mixins.scss */
   .row::after {
     content: "";
     display: table;
     clear: both; }
-  /* line 12, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+  /* line 12, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
   .row [class^="col-"] {
     float: left; }
-    /* line 16, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+    /* line 15, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-  /* line 21, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+  /* line 20, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
-  /* line 25, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+  /* line 25, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
-  /* line 29, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+  /* line 29, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  /* line 33, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+  /* line 33, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
-  /* line 37, /Users/ragnarok/Sites/websites/natour/sass/layout/_grid.scss */
+  /* line 37, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  /* line 41, /Users/ragnarok/Sites/websites/natours/sass/layout/_grid.scss */
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
-/* line 1, /Users/ragnarok/Sites/websites/natour/sass/layout/_header.scss */
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/layout/_header.scss */
 .header {
   position: relative;
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  /* line 13, /Users/ragnarok/Sites/websites/natour/sass/layout/_header.scss */
+  /* line 14, /Users/ragnarok/Sites/websites/natours/sass/layout/_header.scss */
   .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
-  /* line 19, /Users/ragnarok/Sites/websites/natour/sass/layout/_header.scss */
+  /* line 20, /Users/ragnarok/Sites/websites/natours/sass/layout/_header.scss */
   .header__logo {
     height: 3.5rem; }
-  /* line 23, /Users/ragnarok/Sites/websites/natour/sass/layout/_header.scss */
+  /* line 24, /Users/ragnarok/Sites/websites/natours/sass/layout/_header.scss */
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -250,10 +586,79 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-/* line 1, /Users/ragnarok/Sites/websites/natour/sass/pages/_home.scss */
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/layout/_footer.scss */
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  text-align: center; }
+  /* line 11, /Users/ragnarok/Sites/websites/natours/sass/layout/_footer.scss */
+  .footer__logo {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 8rem; }
+  /* line 21, /Users/ragnarok/Sites/websites/natours/sass/layout/_footer.scss */
+  .footer__list {
+    list-style: none; }
+  /* line 25, /Users/ragnarok/Sites/websites/natours/sass/layout/_footer.scss */
+  .footer__item {
+    display: inline-block; }
+    /* line 28, /Users/ragnarok/Sites/websites/natours/sass/layout/_footer.scss */
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  /* line 34, /Users/ragnarok/Sites/websites/natours/sass/layout/_footer.scss */
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+
+/* line 1, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  width: 100%; }
+
+/* line 8, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem; }
+  /* line 19, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
+  .section-features > * {
+    transform: skewY(7deg); }
+
+/* line 26, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
+.section-tours {
+  background-color: #f7f7f7;
+  margin-top: -10rem;
+  padding: 25rem 0 15rem 0; }
+
+/* line 32, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
+.section-stories {
+  position: relative;
+  padding: 15rem 0; }
+
+/* line 37, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+/* line 43, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 35%, transparent 35%), url(../img/nat-10.jpg);
+  background-size: 150%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: 55rem;
+  width: 80%;
+  margin: 0 auto; }
+  /* line 56, /Users/ragnarok/Sites/websites/natours/sass/pages/_home.scss */
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 /*# sourceMappingURL=main.css.map */
